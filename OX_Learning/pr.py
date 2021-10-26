@@ -1,0 +1,1 @@
+present legendaly dern pai tang nai gor me tea khon me fan dern jab mea khungkhan yer yae pai mod khon na ta mai dee yang pom man gor khong tong od tong sea kin ou ja ro nai chat nee rea chat na ton bai bai rea goegielobiueigie;aogblfdo
