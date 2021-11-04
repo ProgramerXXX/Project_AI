@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def ListElim(X,T):
     X = np.array(X)
@@ -42,11 +43,15 @@ def isConsist(X,T,h,t):
     return True
 
 if __name__ == '__main__':
-    X = [['Sunny','Warm','Normal','Strong','Warm','Same'],
-         ['Sunny','Warm','High','Strong','Warm','Same'],
-         ['Rainy','Cold','High','Strong','Warm','Change'],
-         ['Sunny','Warm','High','Strong','Cool','Change']
-    ]
-    T =['Yes','Yes','No','Yes']
+
+    data = pd.read_csv('playtennis.csv')
+    X = np.array(data.iloc[:,0:-1])
+    T = np.array(data.iloc[:,-1])
+    # X = [['Sunny','Warm','Normal','Strong','Warm','Same'],
+    #      ['Sunny','Warm','High','Strong','Warm','Same'],
+    #      ['Rainy','Cold','High','Strong','Warm','Change'],
+    #      ['Sunny','Warm','High','Strong','Cool','Change']
+    # ]
+    # T =['Yes','Yes','No','Yes']
 
     H,t = ListElim(X,T)

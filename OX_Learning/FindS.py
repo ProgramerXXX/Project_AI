@@ -1,3 +1,5 @@
+import pandas as pd
+import numpy as np 
 
 def expend(X,S):
     for i in range(len(S)):
@@ -15,11 +17,8 @@ def FindS(X , T):
     return S
 
 if __name__ == '__main__':
-    X = [['Sunny','Warm','Normal','Strong','Warm','Same'],
-         ['Sunny','Warm','High','Strong','Warm','Same'],
-         ['Rainy','Cold','High','Strong','Warm','Change'],
-         ['Sunny','Warm','High','Strong','Cool','Change']
-    ]
-    T =['Yes','Yes','No','Yes']
+    data = pd.read_csv('playtennis.csv')
+    X = np.array(data.iloc[:,0:-1])
+    T = np.array(data.iloc[:,-1])
     S = FindS(X,T)
     print(S)
