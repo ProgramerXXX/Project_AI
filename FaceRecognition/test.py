@@ -3,7 +3,7 @@ from cv2 import CascadeClassifier
 import pickle
 import numpy as np
 
-
+im = cv.v
 faceDetaction = CascadeClassifier('E:/FaceRecog/facedetect.xml')
 svmmodel = pickle.load(open('E:/FaceRecog/gendermodelpca.mol','rb'))
 facepca = pickle.load(open('E:/FaceRecog/gendermodelpca.pca','rb'))

@@ -24,7 +24,7 @@ for ii = 1:600
     trigger(vid);
     img = getdata(vid,1);    
 
-%วาดภาพสี่เหลี่ยมรอบใบหน้า
+%วาดภาพสี่เหลี่ยมรอบใบหน้าและครอปภาพนั้นออกมา
 bbox = step(faceDetector,img);
 if ~isempty(bbox)
     bbox = bbox(1,:);

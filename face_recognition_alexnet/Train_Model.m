@@ -5,6 +5,7 @@ imds = imageDatastore('train', ...
 [imdsTrain,imdsValidation] = splitEachLabel(imds,0.7,'randomized');
 numTrainImages = numel(imdsTrain.Labels);
 idx = randperm(numTrainImages,16);
+
 figure
 for i = 1:16
     subplot(4,4,i)
